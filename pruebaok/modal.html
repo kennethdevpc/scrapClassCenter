@@ -1,0 +1,380 @@
+<div data-template="modal">
+  <div class="cmpt-modal active">
+    <div
+      class="cmpt-modal-blanket scrollable-y z-top border-box fixed top left height-100 padding-small large-up-padding-xlarge width-100"
+      data-detail='{ "id": "" }'
+      data-name="MODAL_CLOSE"
+    >
+      <div
+        style="min-width: auto; max-width: 850px"
+        class="cmpt-modal-container bg-white radius border-box width-centered width-100 relative"
+      >
+        <button
+          class="radius-circle scale-on-hover bg-gray-light z-force-top absolute top right margin-vert-xsmall margin-horz-xsmall"
+          data-detail='{ "close": true }'
+          data-name="MODAL_CLOSE"
+        >
+          <span class="margin-xsmall icon-center icon-x-charcoal icon-small">Close</span>
+        </button>
+        <div style="min-height: 700px" data-template="modal-content">
+          <div class="width-centered max-850 row border-box small-down-padding-horz-medium padding-xxlarge">
+            <form
+              autocomplete="off"
+              novalidate=""
+              data-name="SIGNUP_FORM"
+              class="border-box width-100 large-up-width-1-2 large-up-padding-right-xlarge"
+            >
+              <header class="margin-bottom-medium">
+                <h1 class="head-2 margin-bottom-xxsmall">Set up your account</h1>
+                <p class="text-3 line-tight">Already have an account? <a href="/login">Login</a></p>
+              </header>
+
+              <div class="margin-bottom-medium">
+                <div class="sign-in-with-google row horz-align-center">
+                  <div class="S9gUrf-YoZ4jf" style="position: relative">
+                    <div></div>
+                    <iframe
+                      src="https://accounts.google.com/gsi/button?theme=outline&amp;size=large&amp;text=signin_with&amp;width=199&amp;client_id=800843789351-uaenl03be56t7l8l8be0ms54n7kc0al4.apps.googleusercontent.com&amp;iframe_id=gsi_79423_14913&amp;as=L10OEajOq3XOu5Da40ucPg"
+                      id="gsi_79423_14913"
+                      title="Botón Iniciar sesión con Google"
+                      style="
+                        display: block;
+                        position: relative;
+                        top: 0px;
+                        left: 0px;
+                        height: 44px;
+                        width: 242px;
+                        border: 0px;
+                        margin: -2px -10px;
+                      "
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <div class="margin-bottom-medium border-center border-gray-light row horz-align-center">
+                <p
+                  style="height: 32px; width: 32px"
+                  class="text-2 bg-gray-light radius-circle lower row horz-align-center vert-align-middle border-box"
+                >
+                  <span>Or</span>
+                </p>
+              </div>
+
+              <fieldset class="margin-bottom-small relative">
+                <label class="text-2 block margin-bottom-xxsmall" for="email-input">Your email</label>
+                <div id="field-message-email" data-template="field-message-email"></div>
+                <input
+                  maxlength="255"
+                  spellcheck="false"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  required=""
+                  class="input-large input-white width-100"
+                  type="email"
+                  name="email"
+                  data-name="EMAIL_INPUT"
+                  id="email-input"
+                />
+              </fieldset>
+
+              <fieldset class="margin-bottom-small relative">
+                <label class="text-2 block margin-bottom-xxsmall" for="name-input">Your full name</label>
+                <div id="field-message-full_name" data-template="field-message-full_name"></div>
+                <input
+                  maxlength="255"
+                  minlength="3"
+                  spellcheck="false"
+                  autocomplete="name"
+                  required=""
+                  class="input-large input-white width-100"
+                  type="text"
+                  name="full_name"
+                  id="name-input"
+                />
+              </fieldset>
+
+              <fieldset class="margin-bottom-small relative">
+                <label class="text-2 block margin-bottom-xxsmall" for="password-input">Choose password</label>
+                <div id="field-message-password" data-template="field-message-password"></div>
+                <input
+                  maxlength="255"
+                  minlength="7"
+                  autocomplete="new-password"
+                  required=""
+                  class="input-large input-white width-100 inspectletIgnore"
+                  type="password"
+                  name="password"
+                  id="password-input"
+                />
+              </fieldset>
+
+              <p class="text-3 line-tight margin-bottom-small">
+                By signing up to create an account I accept Class Central's
+                <a href="/about/privacy-policy" rel="noopener">Privacy Policy</a>.
+              </p>
+
+              <fieldset class="margin-bottom-medium relative">
+                <div
+                  data-autohide=""
+                  id="field-message-friendly_captcha_solution"
+                  data-template="field-message-friendly_captcha_solution"
+                ></div>
+                <div data-sitekey="FCMP5TI2CPJ8NF4E" class="frc-captcha" id="frc-style">
+                  <div class="frc-container frc-success">
+                    <svg
+                      class="frc-icon"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="32"
+                      width="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>Completed: 9s (898K/s)</title>
+                      <path
+                        d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"
+                      ></path>
+                    </svg>
+                    <div class="frc-content">
+                      <span class="frc-text" title="Completed: 9s (898K/s)">I am human</span>
+                    </div>
+                  </div>
+                  <span class="frc-banner"
+                    ><a href="https://friendlycaptcha.com/" rel="noopener" target="_blank"
+                      ><b>Friendly</b>Captcha ⇗</a
+                    ></span
+                  >
+                  <input
+                    name="frc-captcha-solution"
+                    class="frc-captcha-solution"
+                    type="hidden"
+                    value="ba934864eb8b70e86e8d75eae4d7db9d.ZAUiYJL2QmZmi7yOAQwtjQAAAAAAAAAADP/K5aGzWeE=.AAAAAHLLAAABAAAAArkJAAIAAACPAQAAAwAAADEGBQAEAAAA/7MBAAUAAAAwSQEABgAAAOOHAgAHAAAAancCAAgAAAAsMAAACQAAAH2UDAAKAAAA/TYHAAsAAACItQIADAAAACxGAQANAAAAkGwBAA4AAACUhgAADwAAAGiCAAAQAAAAl10GABEAAABHbwMAEgAAACc4AQATAAAArjwBABQAAADWCAAAFQAAAPoxBwAWAAAAXk0AABcAAABJJgAAGAAAAMJmAgAZAAAAkkMEABoAAADubwIAGwAAAClsAwAcAAAAmrgDAB0AAACmeAAAHgAAAMTWDgAfAAAAeqwCACAAAAC7PQEAIQAAADh4AQAiAAAAf+MCACMAAABFBwAAJAAAAMZLAAAlAAAA7XUAACYAAAAj6AIAJwAAAEegAAAoAAAALdwAACkAAABFIQAAKgAAAEmeAgArAAAAo2wAACwAAACtcQAA.AgAI"
+                  />
+                </div>
+              </fieldset>
+
+              <footer data-template="signup-submit-button">
+                <button type="submit" class="btn-blue btn-large">Create your account</button>
+                <button
+                  data-detail='{ "close": true }'
+                  data-name="MODAL_CLOSE"
+                  type="button"
+                  class="margin-left-medium color-gray"
+                >
+                  Dismiss
+                </button>
+              </footer>
+            </form>
+
+            <div
+              class="medium-down-hidden width-1-2 margin-top-xxlarge padding-top-xxlarge padding-left-xlarge border-box border-left border-gray-light"
+            >
+              <h2 class="head-3 margin-bottom-xxsmall">
+                Join Class Central for <span class="color-blue">Free</span>
+              </h2>
+              <p class="text-1 italic margin-bottom-medium"></p>
+
+              <ul class="margin-bottom-large list-no-style">
+                <li class="row vert-align-middle nowrap margin-bottom-large">
+                  <div class="margin-right-medium">
+                    <i class="icon-center icon-large icon-course-blue"></i>
+                  </div>
+                  <p class="text-2 line-tight">
+                    <strong class="weight-bold">Discover 100,000 courses</strong> from top universities like
+                    Harvard, Stanford, IITs, and hundreds more.
+                  </p>
+                </li>
+
+                <li class="row vert-align-middle nowrap margin-bottom-large">
+                  <div class="margin-right-medium">
+                    <i class="icon-center icon-large icon-envelope-blue"></i>
+                  </div>
+                  <p class="text-2 line-tight">
+                    <strong class="weight-bold">Never miss a course</strong> with our Follow button for
+                    education
+                  </p>
+                </li>
+
+                <li class="row vert-align-middle nowrap margin-bottom-large">
+                  <div class="margin-right-medium">
+                    <i class="icon-center icon-large icon-bookmark-blue"></i>
+                  </div>
+                  <p class="text-2 line-tight">
+                    <strong class="weight-bold">Bookmark courses</strong> or create learning paths from any
+                    resource on the web.
+                  </p>
+                </li>
+              </ul>
+
+              <ul
+                class="row vert-align-middle horz-align-center padding-top-large margin-bottom-large list-no-style"
+              >
+                <li class="padding-horz-small">
+                  <h3 class="head-2 color-blue">50M</h3>
+                  <p class="text-1 italic">visitors</p>
+                </li>
+                <li class="padding-horz-small">
+                  <h3 class="head-2 color-blue">30M</h3>
+                  <p class="text-1 italic">follows</p>
+                </li>
+                <li class="padding-horz-small">
+                  <h3 class="head-2 color-blue">200k</h3>
+                  <p class="text-1 italic">reviews</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="width-centered max-850 row border-box small-down-padding-horz-medium padding-xxlarge">
+  <form
+    class="border-box width-100 large-up-width-1-2 large-up-padding-right-xlarge"
+    data-name="SIGNUP_FORM"
+    novalidate
+    autocomplete="off"
+  >
+    <header class="margin-bottom-medium">
+      <h1 class="head-2 margin-bottom-xxsmall">Set up your account</h1>
+      <p class="text-3 line-tight">Already have an account? <a href="login.html">Login</a></p>
+    </header>
+
+    <div class="margin-bottom-medium">
+      <div class="sign-in-with-google row horz-align-center">
+        <div class="btn-medium btn-white icon-left-small icon-google margin-right-small disabled">
+          Sign in with Google
+        </div>
+      </div>
+    </div>
+
+    <div class="margin-bottom-medium border-center border-gray-light row horz-align-center">
+      <p
+        class="text-2 bg-gray-light radius-circle lower row horz-align-center vert-align-middle border-box"
+        style="height: 32px; width: 32px"
+      >
+        <span>Or</span>
+      </p>
+    </div>
+
+    <fieldset class="margin-bottom-small relative">
+      <label for="email-input" class="text-2 block margin-bottom-xxsmall">Your email</label>
+      <div data-template="field-message-email" id="field-message-email"></div>
+      <input
+        id="email-input"
+        data-name="EMAIL_INPUT"
+        name="email"
+        type="email"
+        class="input-large input-white width-100"
+        required
+        autocomplete="email"
+        autocapitalize="off"
+        spellcheck="false"
+        maxlength="255"
+      />
+    </fieldset>
+
+    <fieldset class="margin-bottom-small relative">
+      <label for="name-input" class="text-2 block margin-bottom-xxsmall">Your full name</label>
+      <div data-template="field-message-full_name" id="field-message-full_name"></div>
+      <input
+        id="name-input"
+        name="full_name"
+        type="text"
+        class="input-large input-white width-100"
+        required
+        autocomplete="name"
+        spellcheck="false"
+        minlength="3"
+        maxlength="255"
+      />
+    </fieldset>
+
+    <fieldset class="margin-bottom-small relative">
+      <label for="password-input" class="text-2 block margin-bottom-xxsmall">Choose password</label>
+      <div data-template="field-message-password" id="field-message-password"></div>
+      <input
+        id="password-input"
+        name="password"
+        type="password"
+        class="input-large input-white width-100 inspectletIgnore"
+        required
+        autocomplete="new-password"
+        minlength="7"
+        maxlength="255"
+      />
+    </fieldset>
+
+    <p class="text-3 line-tight margin-bottom-small">
+      By signing up to create an account I accept Class Central's
+      <a rel="noopener" target="_blank" href="about/privacy-policy.html">Privacy Policy</a>.
+    </p>
+
+    <fieldset class="margin-bottom-medium relative">
+      <div
+        data-template="field-message-friendly_captcha_solution"
+        id="field-message-friendly_captcha_solution"
+        data-autohide
+      ></div>
+      <div id="frc-style" class="frc-captcha" data-sitekey="FCMP5TI2CPJ8NF4E"></div>
+    </fieldset>
+
+    <footer data-template="signup-submit-button">
+      <button class="btn-blue btn-large" type="submit">Create your account</button>
+    </footer>
+  </form>
+
+  <div
+    class="medium-down-hidden width-1-2 margin-top-xxlarge padding-top-xxlarge padding-left-xlarge border-box border-left border-gray-light"
+  >
+    <h2 class="head-3 margin-bottom-xxsmall">Join Class Central for <span class="color-blue">Free</span></h2>
+    <p class="text-1 italic margin-bottom-medium"></p>
+
+    <ul class="margin-bottom-large list-no-style">
+      <li class="row vert-align-middle nowrap margin-bottom-large">
+        <div class="margin-right-medium">
+          <i class="icon-center icon-large icon-course-blue"></i>
+        </div>
+        <p class="text-2 line-tight">
+          <strong class="weight-bold">Discover 100,000 courses</strong> from top universities like Harvard,
+          Stanford, IITs, and hundreds more.
+        </p>
+      </li>
+
+      <li class="row vert-align-middle nowrap margin-bottom-large">
+        <div class="margin-right-medium">
+          <i class="icon-center icon-large icon-envelope-blue"></i>
+        </div>
+        <p class="text-2 line-tight">
+          <strong class="weight-bold">Never miss a course</strong> with our Follow button for education
+        </p>
+      </li>
+
+      <li class="row vert-align-middle nowrap margin-bottom-large">
+        <div class="margin-right-medium">
+          <i class="icon-center icon-large icon-bookmark-blue"></i>
+        </div>
+        <p class="text-2 line-tight">
+          <strong class="weight-bold">Bookmark courses</strong> or create learning paths from any resource on
+          the web.
+        </p>
+      </li>
+    </ul>
+
+    <ul class="row vert-align-middle horz-align-center padding-top-large margin-bottom-large list-no-style">
+      <li class="padding-horz-small">
+        <h3 class="head-2 color-blue">50M</h3>
+        <p class="text-1 italic">visitors</p>
+      </li>
+      <li class="padding-horz-small">
+        <h3 class="head-2 color-blue">30M</h3>
+        <p class="text-1 italic">follows</p>
+      </li>
+      <li class="padding-horz-small">
+        <h3 class="head-2 color-blue">200k</h3>
+        <p class="text-1 italic">reviews</p>
+      </li>
+    </ul>
+  </div>
+</div>

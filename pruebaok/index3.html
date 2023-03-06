@@ -1,0 +1,66 @@
+<div>
+  <div>
+    <div
+      data-menu="lists"
+      data-name="NAV_DROPDOWN"
+      data-detail='{"name": "lists"}'
+      class="xsmall-only-hidden margin-horz-xsmall"
+    >
+      <button
+        data-track-ga='[
+                { "category": "Lists", "action": "Add Item", "label": "Navbar"},
+                { "category": "nav_click", "action": "lists", "label":"add item"}
+              ]'
+        aria-label="Your lists"
+        data-name="NAV_TRIGGER"
+        data-detail='{"name": "lists"}'
+        class="cmpt-nav-add-item btn-circle btn-medium btn-white text-center animate-fade-hidden"
+      >
+        <i class="icon-small icon-list-add-charcoal"></i>
+      </button>
+      <button
+        aria-label="Close Lists menu"
+        data-name="NAV_SUBMENU_CLOSE"
+        data-detail='{"name": "lists"}'
+        class="btn-circle btn-medium btn-white text-center row vert-align-middle horz-align-center animate-fade-entered"
+      >
+        <i class="icon-small icon-x-charcoal"></i>
+      </button>
+      <div
+        class="bg-white z-top absolute border-all border-gray-light shadow-light animate-fade-entered"
+        data-menu-dropdown="lists"
+      >
+        <div class="text-center padding-medium">
+          <img
+            width="100"
+            src="https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Flists%2Flist-empty.png?auto=format&amp;ixlib=php-3.3.1&amp;w=100&amp;s=7005d0a45465e44b0327c67458186ec5"
+            alt=""
+          />
+          <div>
+            <p class="text-2 padding-top-small padding-horz-small">
+              Organize and share your learning with Class Central Lists.
+            </p>
+            <p class="text-2">
+              View our
+              <a
+                data-track-ga='&#x7B;"category"&#x3A;"nav_click","action"&#x3A;"lists","label"&#x3A;"showcase"&#x7D;'
+                href="lists.html"
+                >Lists Showcase</a
+              >
+            </p>
+
+            <a
+              href="signup.html"
+              data-name="SIGNUP_LINK"
+              data-detail='{"source": "navbar lists" }'
+              data-track-ga='{ "category": "nav_click", "action": "lists", "label": "sign up"}'
+              class="text-right btn-blue margin-top-small"
+            >
+              Sign up
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

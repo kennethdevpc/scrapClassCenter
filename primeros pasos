@@ -1,0 +1,56 @@
+let boxNavPrincipal = document.querySelector('[class="main-nav-dropdown js-main-nav-dropdown"]');
+let boxSubsectionx = document
+  .querySelector('[class="main-nav-dropdown js-main-nav-dropdown"]')
+  .querySelectorAll('[data-detail]');
+
+let boxSubsectionAll = document.querySelector('[class="main-nav-dropdown__subsections"]');
+//.querySelector('[data-list-id="rankings"]');
+
+//console.log('en boxSubsectionToChange--------------------', boxSubsectionAll.getAttribute('data-list-id'));
+
+boxSubsectionx.forEach((e) => {
+  //console.log('en prueba2--------------------', e.getAttribute('data-detail'));
+  e.addEventListener('mouseover', enableElementToChange, false);
+  e.addEventListener('mouseout', disableElmentToChange, false);
+});
+
+let elementoencuestion
+function enableElementToChange(e) {
+  j = boxNavPrincipal.classList.add('has-visibile-subsection');
+
+  let elem = e.fromElement.getAttribute('data-detail');
+  console.log('#enableElementToChange=======detalle elemento', elem);
+
+  let x = JSON.parse(elem);
+  console.log('#enableElementToChange=======el valor ultimo', x.childListId); //data-list-id="rankings"
+  y = boxSubsectionAll.querySelector(`[data-list-id="${x.childListId}"]`);
+  m = y.getAttribute('hidden');
+  n = y.getAttribute('data-list-id');
+  console.log('#enableElementToChange=======en la funcion######', 'y:', y, 'm: ', m, 'n: ', n);
+  y.removeAttribute('hidden');
+  y2 = boxSubsectionAll.querySelector(`[data-list-id="${x.childListId}"]`);
+  m2 = y.getAttribute('hidden');
+  n2 = y.getAttribute('data-list-id');
+  console.log('#enableElementToChange=======en la funcion######', 'y2:', y2, 'm2: ', m2, 'n2: ', n2);
+}
+function disableElmentToChange(e) {
+  let elem = e.fromElement.getAttribute('data-detail');
+  a = { childListId: 'subject-education' };
+  console.log('#disableElmentToChange::::::::::::::detalle elemento', elem);
+  let valor_ultimo;
+
+  let x = JSON.parse(elem);
+  console.log('#disableElmentToChange::::::::::::::el valor ultimo', x?.childListId); //data-list-id="rankings"
+  y3 = boxSubsectionAll.querySelector(`[data-list-id="${x?.childListId}"]`);
+  m3 = y.getAttribute('hidden');
+  n3 = y.getAttribute('data-list-id');
+  console.log('#disableElmentToChange::::::::::::::en la funcion######', 'y3:', y3, 'm3: ', m3, 'n3: ', n3);
+  y3?.setAttribute('hidden', '');
+  y4 = boxSubsectionAll.querySelector(`[data-list-id="${x?.childListId}"]`);
+  m4 = y.getAttribute('hidden');
+  n4 = y.getAttribute('data-list-id');
+  console.log('#disableElmentToChange::::::::::::::en la funcion######', 'y4:', y4, 'm4: ', m4, 'n4: ', n4);
+}
+
+console.log('aveeeeeeer');
+
